@@ -20,12 +20,15 @@
 
 .logo_container_h {
   width: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .text_container_h {
   margin-top: 4rem;
   color: $green_main;
-  font-size: 1.8rem;
+  font-size: 4rem;
   text-align: center;
 
   span {
@@ -38,6 +41,7 @@ footer {
   width: 100%;
   height: 40%;
   background-color: $white_main;
+  background-color: white;
   padding: 3rem;
 
   display: flex;
@@ -46,7 +50,7 @@ footer {
   position: relative;
 
   .btn_footer_h {
-    font-size: 1.4rem;
+    font-size: 4.4rem;
     padding: 1rem 1.4rem;
     background-color: $green_main;
     color: $blue_main;
@@ -111,18 +115,21 @@ footer .social_container_h {
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 3rem;
 
       padding: 0.3rem;
       background-color: $blue_main;
       border-radius: 100%;
       color: $white_main;
+      color: white;
     }
   }
 }
 
 .nossa_link_h {
   color: $blue_main;
-  margin-top: 1rem;
+  margin-top: 3rem;
+  font-size: 2.5rem;
 }
 
 @media (min-width: 1440px) {
@@ -136,11 +143,14 @@ footer .social_container_h {
 
     .logo_container_h {
       width: 16rem;
+      display: center;
+      align-items: center;
+      justify-content: center;
     }
 
     .text_container_h {
       margin-top: 0;
-      font-size: 2rem;
+      font-size: 4rem;
     }
   }
 
@@ -151,7 +161,7 @@ footer .social_container_h {
     flex-direction: column-reverse;
 
     .image_container_h img {
-      width: 12rem;
+      width: 22rem;
     }
 
     .phone_h {

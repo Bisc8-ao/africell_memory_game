@@ -18,16 +18,16 @@ const Start = () => {
     <div className="wrapper_h">
       <div className="first_content_h">
         <div className="logo_container_h">
-          <img src={nossaSeguros} alt="Nossa Seguros Logo" />
+          <img src={nossaSeguros} alt="Afrimoney" />
         </div>
         <div className="text_container_h">
           <p>SEJA BEM-VINDO</p>
           <p>
-            À <span>NOSSA SEGUROS</span>.
+            À <span>AFRICELL</span>.
           </p>
           <p>VAMOS TESTAR A</p>
           <p>
-            <span>NOSSA MEMÓRIA</span>?
+            <span>A SUA MEMÓRIA</span>?
           </p>
         </div>
       </div>
@@ -44,12 +44,9 @@ const Start = () => {
 
         <div className="footer_container_h">
           <div className="image_container_h">
-            <img src={callCenter} alt="Call Center" width="100px" />
+            <img src={callCenter} alt="Call Center" width="250px" />
           </div>
 
-          <div className="phone_h">
-            <span className="">+244 923 190 860</span>
-          </div>
 
           <div className="social_container_h">
             <ul>
@@ -66,7 +63,7 @@ const Start = () => {
                 <BiLogoYoutube />
               </li>
             </ul>
-            <span className="nossa_link_h">www.nossaseguros.ao</span>
+            <span className="nossa_link_h">www.africell.ao</span>
           </div>
         </div>
       </footer>
