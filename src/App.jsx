@@ -1,10 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { TimerProvider } from "./context/timerContext";
 import { AppRouter } from "./routes";
 
 import "./App.scss";
 
 function App() {
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight
+  });
+
   useEffect(() => {
     // Disable context menu
     const disableContextMenu = (e) => {
@@ -12,14 +17,26 @@ function App() {
     };
     document.addEventListener("contextmenu", disableContextMenu);
 
-    // Log window dimensions
-    console.log(window.innerWidth, window.innerHeight);
+    // Handle window resize
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight
+      });
+    };
 
-    // Cleanup event listener when component unmounts
+    // Add resize event listener
+    window.addEventListener('resize', handleResize);
+
+    // Log initial window dimensions
+    console.log('Window dimensions:', windowSize.width, windowSize.height);
+
+    // Cleanup event listeners when component unmounts
     return () => {
       document.removeEventListener("contextmenu", disableContextMenu);
+      window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [windowSize.width, windowSize.height]);
 
   return (
     <TimerProvider className="App">

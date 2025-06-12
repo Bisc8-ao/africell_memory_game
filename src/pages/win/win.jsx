@@ -31,9 +31,8 @@ const Win = () => {
         </div>
         <div className="text_container_en">
           <p>
-            PARABÉNS,
-            <br />
-            GANHOU!
+            PARABÉNS, AGORA JÁ PODES
+             RECEBER A TUA TRANSFERÊNCIA INTERNACIONAL!
           </p>
         </div>
 
