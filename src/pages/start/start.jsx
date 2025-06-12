@@ -12,7 +12,10 @@ const Start = () => {
   const { callCenter, nossaSeguros } = assets();
   const navigate = useNavigate();
 
-  alert(window.innerWidth)
+  alert(window.innerHeight)
+
+  // MUPi Android: 785 width
+
 
   return (
     <div className="wrapper_h">
