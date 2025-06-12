@@ -36,12 +36,14 @@ function App() {
       document.removeEventListener("contextmenu", disableContextMenu);
       window.removeEventListener('resize', handleResize);
     };
-  }, [windowSize.width, windowSize.height]);
+  }, []);
 
   return (
-    <TimerProvider className="App">
-      <AppRouter />
-    </TimerProvider>
+    <div className="App">
+      <TimerProvider>
+        <AppRouter />
+      </TimerProvider>
+    </div>
   );
 }
 
