@@ -33,7 +33,7 @@ const Info = () => {
             PARA MEMORIZAR
             <br /> A POSIÇÃO DE CADA <br />
             UM DOS NOSSOS <br />
-            SEGUROS
+            PRODUTOS
           </p>
         </div>
         <button
