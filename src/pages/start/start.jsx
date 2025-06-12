@@ -12,7 +12,7 @@ const Start = () => {
   const { callCenter, nossaSeguros } = assets();
   const navigate = useNavigate();
 
-  console.log(window.innerWidth)
+  alert(window.innerWidth)
 
   return (
     <div className="wrapper_h">
