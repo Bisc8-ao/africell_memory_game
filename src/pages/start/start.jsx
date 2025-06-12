@@ -12,11 +12,6 @@ const Start = () => {
   const { callCenter, nossaSeguros } = assets();
   const navigate = useNavigate();
 
-  alert(window.innerHeight)
-
-  // MUPi Android: 785 width
-
-
   return (
     <div className="wrapper_h">
       <div className="first_content_h">
@@ -24,13 +19,11 @@ const Start = () => {
           <img src={nossaSeguros} alt="Afrimoney" />
         </div>
         <div className="text_container_h">
-          <p>SEJA BEM-VINDO</p>
-          <p>
-            À <span>AFRICELL</span>.
-          </p>
+          <p>SÊ BEM-VINDO</p>
+          <p>À <span> AFRICELL.</span></p>
           <p>VAMOS TESTAR A</p>
           <p>
-            <span>A SUA MEMÓRIA</span>?
+            <span>A TUA MEMÓRIA</span>?
           </p>
         </div>
       </div>
@@ -47,7 +40,7 @@ const Start = () => {
 
         <div className="footer_container_h">
           <div className="image_container_h">
-            <img src={callCenter} alt="Call Center" width="250px" />
+            <img src={callCenter} alt="Call Center" width="120px" />
           </div>
 
 

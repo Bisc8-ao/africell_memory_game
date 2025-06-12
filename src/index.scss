@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
+@font-face {
+    font-family: 'Nexa';
+    src: url('./assets/font/NexaHeavy.ttf') format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url('./assets/font/NexaBold.otf') format('truetype');
+    font-weight: 900;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Nexa", sans-serif;
+    font-weight: 900;
     list-style: none;
 }
 

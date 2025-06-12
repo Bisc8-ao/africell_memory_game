@@ -96,7 +96,7 @@ const Game = () => {
       <div className="game_container_fl">
         <header className={`header_container_fl`}>
           <div className="header_logo_fl">
-            <img src={nossaSeguros} alt="Nossa Seguros Logo" />
+            <img src={nossaSeguros} alt="Africell Logo" />
           </div>
         </header>
 

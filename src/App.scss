@@ -1,0 +1,28 @@
+/* Global responsive styles */
+html {
+  font-size: 16px; /* Base font size for rem units */
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* Slightly smaller base font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px; /* Even smaller base font size for mobile phones */
+  }
+}
+
+/* Ensure images are responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure the app container takes full width and height */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}

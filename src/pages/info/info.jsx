@@ -29,8 +29,8 @@ const Info = () => {
         </div>
         <div className="text_container_ab">
           <p>
-            TEM <span>5 SEGUNDOS</span> <br />
-            PARA MEMORIZAR
+            TENS <span>5 SEGUNDOS</span> <br />
+            PARA MEMORIZARES
             <br /> A POSIÇÃO DE CADA <br />
             UM DOS NOSSOS <br />
             PRODUTOS
