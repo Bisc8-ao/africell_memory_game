@@ -39,7 +39,7 @@ const Info = () => {
         <button
           className="btn_accept_ab"
           onClick={() => {
-            handleClick(navigate, shuffleCards, setSeconds, setTimerColor);
+            handleClick(navigate, shuffleCards, setSeconds, setTimerColor, setGameStarted);
           }}
         >
           <strong>ACEITO O DESAFIO</strong>
@@ -52,10 +52,11 @@ const Info = () => {
   );
 };
 
-function handleClick(navigate, shuffleCards, setSeconds, setTimerColor) {
+function handleClick(navigate, shuffleCards, setSeconds, setTimerColor, setGameStarted) {
   shuffleCards();
   setTimerColor('green')
   setSeconds(5);
+  setGameStarted(false);
   navigate("/game");
 }
 
