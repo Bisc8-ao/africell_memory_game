@@ -27,9 +27,13 @@ const TimerProvider = ({ children }) => {
         clearInterval(interval);
       };
     } else if (seconds === 0 && !gameStarted) {
+      // First set the seconds to avoid race condition
       setSeconds(45);
       setTimerColor('red');
-      setGameStarted(true);
+      // Use setTimeout to ensure the seconds state is updated before setting gameStarted
+      setTimeout(() => {
+        setGameStarted(true);
+      }, 100);
     }
   }, [gameStarted, seconds]);
 
